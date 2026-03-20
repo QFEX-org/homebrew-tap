@@ -5,21 +5,21 @@
 class Qfex < Formula
   desc "CLI for the QFEX perpetual futures exchange"
   homepage "https://github.com/QFEX-org/cli"
-  version "0.3.5"
+  version "0.3.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.5/cli_0.3.5_darwin_amd64.tar.gz"
-      sha256 "a9bd63c329d6c77148c858735c55a9df710557124f6c69095be6dd4e3740b702"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.6/cli_0.3.6_darwin_amd64.tar.gz"
+      sha256 "c78d4e354567b6783e33157d924711b4f10a9b32e4969d94cb6ba9f656ebcfac"
 
       define_method(:install) do
         bin.install "qfex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.5/cli_0.3.5_darwin_arm64.tar.gz"
-      sha256 "fea245785b8d3bb04cf2a4655b6365ac8468fee9f02205d5f4d12ed7b35e7a2d"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.6/cli_0.3.6_darwin_arm64.tar.gz"
+      sha256 "9b839c3dc865a69da18565773c574ecb1bb0564f208df5db043af357fdb6a30a"
 
       define_method(:install) do
         bin.install "qfex"
@@ -29,15 +29,15 @@ class Qfex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.5/cli_0.3.5_linux_amd64.tar.gz"
-      sha256 "5849b2fe548a2ede391f51a0c1ef68d986ff4429780816ceec97458fb6655a4e"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.6/cli_0.3.6_linux_amd64.tar.gz"
+      sha256 "f323d8cfb3bb3153f0456222045a70abfd4b87a2e3e880b86990eff3516da760"
       define_method(:install) do
         bin.install "qfex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.5/cli_0.3.5_linux_arm64.tar.gz"
-      sha256 "85ea853fb51634e63e0c73233afc6d3d6461b80a6c0abcbc39482d7bd391cb67"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.6/cli_0.3.6_linux_arm64.tar.gz"
+      sha256 "cee458389694de4fdec8ecd1a7d9d0aeeab0c4b44d3e4dfc80c710c380b41fa3"
       define_method(:install) do
         bin.install "qfex"
       end
