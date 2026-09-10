@@ -5,21 +5,21 @@
 class Qfex < Formula
   desc "CLI for the QFEX perpetual futures exchange"
   homepage "https://github.com/QFEX-org/cli"
-  version "0.3.12"
+  version "0.3.13"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.12/qfex_0.3.12_darwin_amd64.tar.gz"
-      sha256 "39aa15800d58da8f7269d357bcc616152f75e9fde533b99d6f500f6c395f7915"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.13/qfex_0.3.13_darwin_amd64.tar.gz"
+      sha256 "b173c9f2410fe9dc8e5e0400446cdd6a91f5e0b4d40c4f16a6f5ca93e33049f3"
 
       define_method(:install) do
         bin.install "qfex"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.12/qfex_0.3.12_darwin_arm64.tar.gz"
-      sha256 "6573ffcf6968d11906f2617d9baa4d95e9240b0a5cfbeeea5069f183d6bc697d"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.13/qfex_0.3.13_darwin_arm64.tar.gz"
+      sha256 "05aaf1f7b1e5ff8461a3f82bda275dd237372c372123bc4634ba01d667aba176"
 
       define_method(:install) do
         bin.install "qfex"
@@ -29,15 +29,15 @@ class Qfex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.12/qfex_0.3.12_linux_amd64.tar.gz"
-      sha256 "1e7f2e879e54775aa9ed2c28df875ed03da8cb487cbad965c39b587768e7c5eb"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.13/qfex_0.3.13_linux_amd64.tar.gz"
+      sha256 "5cce394e2d995e67daf5108da9680fa0682e287682fa66d4de1b89682c83354d"
       define_method(:install) do
         bin.install "qfex"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/QFEX-org/cli/releases/download/v0.3.12/qfex_0.3.12_linux_arm64.tar.gz"
-      sha256 "c7f759ce007eff36c76b5ed1c4433fc78a8ef8a62dda8fc5559f78fe58cded10"
+      url "https://github.com/QFEX-org/cli/releases/download/v0.3.13/qfex_0.3.13_linux_arm64.tar.gz"
+      sha256 "559c06acd462ee6e5c32ea4d96df719dfd1df59d015c9a03921d5824fc304d84"
       define_method(:install) do
         bin.install "qfex"
       end
